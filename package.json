@@ -2,8 +2,13 @@
   "name": "vue-webpack-buefy",
   "version": "1.0.0",
   "description": "Vue.js starter with full-featured Webpack and Buefy",
-  "author": "Hendro Triokta Brianto",
-  "private": true,
+  "repository": "ndro/vue-webpack-buefy",
+  "author": {
+    "name": "Hendro Triokta Brianto",
+    "email": "hendro@kabut.id",
+    "url": "kabut.id"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
