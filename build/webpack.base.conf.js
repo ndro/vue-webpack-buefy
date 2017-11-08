@@ -33,6 +33,7 @@ module.exports = {
         loader: 'eslint-loader',
         enforce: 'pre',
         include: [resolve('src'), resolve('test')],
+        exclude: /node_modules/,  // changes
         options: {
           formatter: require('eslint-friendly-formatter')
         }

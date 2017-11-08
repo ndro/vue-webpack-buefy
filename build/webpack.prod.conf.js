@@ -24,6 +24,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.build.assetsRoot,
+    publicPath: '',
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
@@ -54,10 +55,12 @@ const webpackConfig = merge(baseWebpackConfig, {
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
+      title: 'My App',
       filename: process.env.NODE_ENV === 'testing'
         ? 'index.html'
         : config.build.index,
       template: 'index.html',
+      favicon: 'src/assets/logo.ico',
       inject: true,
       minify: {
         removeComments: true,
