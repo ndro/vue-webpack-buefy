@@ -1,19 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <transition
-        mode="out-in"
-        enter-active-class="fadeIn"
-        leave-active-class="fadeOut"
-        appear>
-        <router-view class="animated"></router-view>
-    </transition>
+    <nav-bar></nav-bar>
+    <main-content></main-content>
+    <footer-bar></footer-bar>
   </div>
 </template>
 
 <script>
+import { NavBar, MainContent, FooterBar } from 'components/layout/'
+
 export default {
-  name: 'app'
+  components: {
+    'nav-bar': NavBar,
+    'main-content': MainContent,
+    'footer-bar': FooterBar
+  }
 }
 </script>
 
