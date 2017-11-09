@@ -20,6 +20,9 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
+    "buefy": "^0.5.4",
+    "font-awesome": "^4.7.0",
+    "mdi": "^2.0.46",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
