@@ -1,8 +1,11 @@
 <template>
   <footer class="footer">
     <div class="container">
-      <div class="has-text-centered">
-        <p>&copy; 2017 kabut.id</p>
+      <div class="content has-text-centered">
+        <p>
+          <strong>Vuefy</strong> by <a href="http://kabut.id/" target="_blank">kabut.id</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+        </p>
       </div>
     </div>
   </footer>
@@ -10,11 +13,10 @@
 
 <script>
 export default {
-  name: 'footer-bar'
 }
 </script>
 
-<style lang="sass">
+<style lang="scss" scoped>
 
 </style>
 
