@@ -1,19 +1,20 @@
 <template>
-  <section class="hero app-navbar is-bold">
-    <div class="hero-head">
-      <nav class="navbar is-primary">
+  <!--<section class="hero app-navbar is-bold">
+    <div class="hero-head">-->
+      <header class="navbar is-bold is-primary">
+        <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+            <img src="~assets/vuefy1.png" alt="Bulma: a modern CSS framework based on Flexbox">
           </a>
-          <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <div class="navbar-burger burger" data-target="navbarDropdown">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </div>
 
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div id="navbarDropdown" class="navbar-menu">
           <div class="navbar-start">
             <a class="navbar-item" href="#">
               Menu
@@ -42,22 +43,29 @@
 
           <div class="navbar-end">
             <!--<div class="navbar-item">-->
-              <a class="navbar-item is-hidden-desktop-only" href="https://github.com/ndro/vue-webpack-buefy" target="_blank">
+              <a class="navbar-item is-hidden-touch" href="https://github.com/ndro/vue-webpack-buefy" target="_blank">
+                <b-icon pack="fa" icon="github" type="is-white"></b-icon>
+              </a>
+              <a class="navbar-item is-hidden-desktop" href="https://github.com/ndro/vue-webpack-buefy" target="_blank">
                 <b-icon pack="fa" icon="github" type="is-black"></b-icon>
               </a>
             <!--</div>-->
             <div class="navbar-item">
               <div class="field is-grouped">
                 <p class="control">
-                  <a class="bd-tw-button button" href="#">
-                    <!--<b-icon pack="fa" icon="twitter"></b-icon>-->
-                    <span>
-                      Button
-                    </span>
+                  <a class="button is-white is-outlined is-hidden-touch" href="#">
+                    <span>Button</span>
+                  </a>
+                  <a class="button is-primary is-hidden-desktop" href="#">
+                    <span>Button</span>
                   </a>
                 </p>
                 <p class="control">
-                  <a class="button is-success" href="#">
+                  <a class="button is-white is-outlined is-hidden-touch" href="#">
+                    <b-icon pack="fa" icon="user"></b-icon>
+                    <span>With Icon</span>
+                  </a>
+                  <a class="button is-primary is-hidden-desktop" href="#">
                     <b-icon pack="fa" icon="user"></b-icon>
                     <span>With Icon</span>
                   </a>
@@ -66,9 +74,10 @@
             </div>
           </div>
         </div>
-      </nav>
-    </div>
-  </section>
+        </div>
+      </header>
+    <!--</div>
+  </section>-->
 </template>
 
 <script>
@@ -97,8 +106,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style lang="scss" scoped>
-.app-navbar {
-  min-width: 100%;
-}
+
 </style>
 
