@@ -1,11 +1,14 @@
 <template>
   <!--<section class="hero app-navbar is-bold">
     <div class="hero-head">-->
-      <header class="navbar is-bold is-primary">
+      <header class="navbar is-bold">
         <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://bulma.io">
-            <img src="~assets/vuefy1.png" alt="Bulma: a modern CSS framework based on Flexbox">
+            <img src="~assets/kabut.png" alt="Bulma: a modern CSS framework based on Flexbox">
+          </a>
+          <a class="navbar-item is-hidden-desktop" href="https://github.com/ndro/vue-webpack-buefy" target="_blank">
+            <b-icon pack="fa" icon="github" type="is-black"></b-icon>
           </a>
           <div class="navbar-burger burger" data-target="navbarDropdown">
             <span></span>
@@ -17,7 +20,7 @@
         <div id="navbarDropdown" class="navbar-menu">
           <div class="navbar-start">
             <a class="navbar-item" href="#">
-              Menu
+              <router-link :to="{ name: 'Home' }">Home</router-link>
             </a>
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link" href="#">
@@ -43,29 +46,19 @@
 
           <div class="navbar-end">
             <!--<div class="navbar-item">-->
-              <a class="navbar-item is-hidden-touch" href="https://github.com/ndro/vue-webpack-buefy" target="_blank">
-                <b-icon pack="fa" icon="github" type="is-white"></b-icon>
-              </a>
-              <a class="navbar-item is-hidden-desktop" href="https://github.com/ndro/vue-webpack-buefy" target="_blank">
+              <a class="navbar-item" href="https://github.com/ndro/vue-webpack-buefy" target="_blank">
                 <b-icon pack="fa" icon="github" type="is-black"></b-icon>
               </a>
             <!--</div>-->
             <div class="navbar-item">
               <div class="field is-grouped">
                 <p class="control">
-                  <a class="button is-white is-outlined is-hidden-touch" href="#">
-                    <span>Button</span>
-                  </a>
-                  <a class="button is-primary is-hidden-desktop" href="#">
+                  <a class="button is-primary is-outlined" href="#">
                     <span>Button</span>
                   </a>
                 </p>
                 <p class="control">
-                  <a class="button is-white is-outlined is-hidden-touch" href="#">
-                    <b-icon pack="fa" icon="user"></b-icon>
-                    <span>With Icon</span>
-                  </a>
-                  <a class="button is-primary is-hidden-desktop" href="#">
+                  <a class="button is-primary" href="#">
                     <b-icon pack="fa" icon="user"></b-icon>
                     <span>With Icon</span>
                   </a>
@@ -106,6 +99,8 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style lang="scss" scoped>
-
+.navbar {
+  border-bottom: 1px solid #e0e0e0;
+}
 </style>
 
