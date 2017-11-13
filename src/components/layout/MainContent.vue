@@ -1,17 +1,12 @@
 <template>
   <section class="main-content">
-    <div class="container">
-      <img src="~/assets/logo.png">
-      <b-icon icon="person" pack="fa"></b-icon>
-      <b-icon icon="person"></b-icon>
-      <transition
-          mode="out-in"
-          enter-active-class="fadeIn"
-          leave-active-class="fadeOut"
-          appear>
-          <router-view class="animated"></router-view>
-      </transition>
-    </div>
+    <transition
+        mode="out-in"
+        enter-active-class="fadeIn"
+        leave-active-class="fadeOut"
+        appear>
+        <router-view class="animated"></router-view>
+    </transition>
   </section>
 </template>
 
@@ -21,6 +16,8 @@ export default {
 }
 </script>
 
-<style lang="sass">
-
+<style lang="scss" scoped>
+.main-content {
+  min-height: 400px;
+}
 </style>
