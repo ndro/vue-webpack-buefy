@@ -2,17 +2,19 @@
   <div id="app">
     <nav-bar></nav-bar>
     <main-content></main-content>
+    <info-bar></info-bar>
     <footer-bar></footer-bar>
   </div>
 </template>
 
 <script>
-import { NavBar, MainContent, FooterBar } from 'components/layout/'
+import { NavBar, MainContent, InfoBar, FooterBar } from 'components/layout/'
 
 export default {
   components: {
     'nav-bar': NavBar,
     'main-content': MainContent,
+    'info-bar': InfoBar,
     'footer-bar': FooterBar
   }
 }
