@@ -4,8 +4,9 @@
       <header class="navbar is-bold">
         <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="~assets/kabut.png" alt="Bulma: a modern CSS framework based on Flexbox">
+          <a class="navbar-item">
+            <i class="fa fa-cog fa-spin fa-2x fa-fw"></i> Logo
+            <!-- ref: http://fontawesome.io/examples/#animated -->
           </a>
           <a class="navbar-item is-hidden-desktop" href="https://github.com/ndro/vue-webpack-buefy" target="_blank">
             <b-icon pack="fa" icon="github" type="is-black"></b-icon>
