@@ -15,7 +15,7 @@
              <p><router-link :to="{ path: '/' }">Item 1</router-link></p>
              <p><router-link :to="{ path: '/#/' }">Item 2</router-link></p>
           </div>
-          <div class="column">
+          <div class="column has-text-centered">
             <p>
               <b>Support</b> us!
               <br>
@@ -31,38 +31,14 @@
             </p>
           </div>
           <div class="column">
-            <b>Official </b>reference:
-            <div class="columns">
-              <div class="column">
-                <a href="https://vuejs.org/v2/guide/" target="_blank">
-                  <img src="~assets/vue-logo.svg" alt="" width="90">
-                </a>
-              </div>
-              <div class="column">
-                <a href="https://github.com/vuejs-templates/webpack" target="_blank">
-                  <img src="~assets/vue-webpack-logo.png" alt="" width="80">
-                </a>
-              </div>
-              <div class="column">
-                <a href="https://bulma.io/documentation/overview/start/" target="_blank">
-                  <img src="~assets/bulma-logo.png" alt="" width="100">
-                </a>
-              </div>
-            </div>
-            <b>Additional </b>reference:
-            <div class="columns">
-              <div class="column">
-                <a href="https://buefy.github.io/#/documentation/start" target="_blank">
-                  <img src="~assets/buefy-logo.png" alt="" width="80">
-                </a>
-              </div>
-              <div class="column">
-                <a href="https://github.com/vuejs/awesome-vue" target="_blank">
-                  <img src="~assets/awesome-logo.png" alt="" width="90">
-                </a>
-              </div>
-              <div class="column"></div>
-            </div>
+            <b>Contact </b>us:
+            <p>
+              Best company of the world<br>
+              JL. Street No. 0, City<br>
+              <b-icon pack="fa" icon="envelope"></b-icon> <span>email@yourcompany.com</span><br>
+              <b-icon pack="fa" icon="facebook-square"></b-icon> <span><a href="https://facebook.com/yourfb" target="_blank">Your Company</a></span><br>
+              <b-icon pack="fa" icon="instagram"></b-icon> <span><a href="https://instagram.com/your ig" target="_blank">&#64;company</a></span>
+            </p>
           </div>
         </div>
         <div class="columns has-text-centered">
