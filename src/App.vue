@@ -57,4 +57,9 @@ $link-focus-border: $primary;
 
 $fa-font-path: '~font-awesome/fonts/';
 @import '~font-awesome/scss/font-awesome';
+
+// global custom style
+.has-shadow {
+  box-shadow: 0 2px 3px hsla(0,0%,4%,.1);
+}
 </style>
