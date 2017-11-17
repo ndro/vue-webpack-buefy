@@ -20,10 +20,14 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json', '.css'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      package: path.resolve(__dirname, '../package.json'),
+      src: path.resolve(__dirname, '../src'),
+      assets: path.resolve(__dirname, '../src/assets'),
+      components: path.resolve(__dirname, '../src/components'),
+      views: path.resolve(__dirname, '../src/views'),
     }
   },
   module: {
@@ -33,6 +37,7 @@ module.exports = {
         loader: 'eslint-loader',
         enforce: 'pre',
         include: [resolve('src'), resolve('test')],
+        exclude: /node_modules/,  // changes
         options: {
           formatter: require('eslint-friendly-formatter')
         }
