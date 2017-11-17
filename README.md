@@ -3,6 +3,10 @@
 - [Buefy](https://buefy.github.io/) 0.6.1
 - Webpack 3.8.1
 
+## Demo
+
+See [demo...](https://ndro.github.io/vue-webpack-buefy/)
+
 # Getting Started
 
 ### Create project using vue-cli:
