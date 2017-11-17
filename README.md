@@ -1,11 +1,15 @@
+# Vue Webpack Buefy
+
+> Vue.js starter with full-featured Webpack and Buefy
+
+Alternative to people who have problem when they project adding native [Bulma](http://bulma.io/).
+
+# See [Demo](https://ndro.github.io/vue-webpack-buefy/)
+
 ## Features
 - [Vue.js](https://vuejs.org/) 2.5.2
 - [Buefy](https://buefy.github.io/) 0.6.1
 - Webpack 3.8.1
-
-## Demo
-
-See [demo...](https://ndro.github.io/vue-webpack-buefy/)
 
 # Getting Started
 
@@ -39,6 +43,12 @@ See [demo...](https://ndro.github.io/vue-webpack-buefy/)
     # run all tests
     $ npm test
 ```
+
+> note : If you have problem when **build** the project, maybe should put folder *static/fonts* to css. It will be *static/css/static/fonts*
+
+### Next development
+- Add more template
+- Setting vuex store (v1.0.0)
 
 ### For more reference:
 - [Vue.js](https://vuejs.org/)
