@@ -47,9 +47,9 @@
           <h1 class="title">Getting Started</h1>
           <hr>
           <h4><b>Create</b> project using <span class="tag">vue-cli</span>: </h4>
+          Clone or download the project, <a href="https://github.com/ndro/vue-webpack-buefy/archive/master.zip">here</a>. Then,
           <pre>
-            $ vue init ndro/vue-webpack-buefy my-project
-            $ cd my-project
+            $ cd (folder-project)
             $ npm install
           </pre>
           <h4><b>run</b> project with: (<a href="https://github.com/vuejs-templates/webpack">reference</a>)</h4>
@@ -63,7 +63,7 @@
             # build for production and view the bundle analyzer report
             $ npm run build --report
           </pre>
-          <h4>if you want to run <b>unit-test</b> using: (<a href="https://github.com/vuejs-templates/webpack">reference</a>)</h4>
+          <h4>if you want to run <b>unit-test</b> using: (<a href="https://github.com/vuejs-templates/webpack">reference</a>)</h4> <i>*doesn't implemented yet</i>
           <pre>
             # run unit tests
             $ npm run unit

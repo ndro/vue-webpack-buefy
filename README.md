@@ -14,9 +14,11 @@ Alternative to people who have problem when they project adding native [Bulma](h
 # Getting Started
 
 ### Create project using vue-cli:
+
+Clone or download the project, [here](https://github.com/ndro/vue-webpack-buefy/archive/master.zip). Then,
+
 ```terminal
-    $ vue init ndro/vue-webpack-buefy my-project
-    $ cd my-project
+    $ cd (folder-project)
     $ npm install
 ```
 
@@ -32,7 +34,7 @@ Alternative to people who have problem when they project adding native [Bulma](h
     $ npm run build --report
 ```
 
-### if you want to run unit-test using: (reference)
+### if you want to run unit-test using: (reference) _*doesn't implemented yet_
 ```terminal
     # run unit tests
     $ npm run unit
